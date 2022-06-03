@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calc.View.CalcPage" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Str}" FontSize="60" TextColor="White" HorizontalOptions="EndAndExpand" Margin="0,220,10, 10"/>
+            <Grid Margin="12,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Button
+                Grid.Row="0"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="+"
+                Command="{Binding AddCommand}"
+                CommandParameter="1"
+                FontAttributes="Bold"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt2"
+                Grid.Row="0"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                FontAttributes="Bold"
+                Text="-"
+                Command="{Binding DiffCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"  />
+                <Button
+                x:Name="bnt3"
+                Grid.Row="0"
+                Grid.RowSpan="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="35"
+                FontAttributes="Bold"
+                Text="x"
+                Command="{Binding MultCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt4"
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="0"
+                Command="{Binding NullCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt5"
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="1"
+                Command="{Binding OneCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt6"
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="2"
+                Command="{Binding SecondCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt7"
+                Grid.Row="2"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="4"
+                Command="{Binding FourthCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt8"
+                Grid.Row="2"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="5"
+                Command="{Binding FiveCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt9"
+                Grid.Row="2"
+                Grid.RowSpan="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="6"
+                Command="{Binding SixCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"/>
+                <Button
+                x:Name="bnt19"
+                Grid.Row="0"
+                Grid.RowSpan="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                FontAttributes="Bold"
+                Text="/"
+                Command="{Binding DivCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt83"
+                Grid.Row="2"
+                Grid.RowSpan="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="7"
+                Command="{Binding SevenCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White" />
+                <Button
+                x:Name="bnt93"
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="3"
+                Command="{Binding ThirdCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"/>
+                <Button
+                x:Name="bnt932"
+                Grid.Row="3"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="8"
+                Command="{Binding EightCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"/>
+                <Button
+                x:Name="bnt9322"
+                Grid.Row="3"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="45"
+                Text="9"
+                Command="{Binding NineCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"/>
+                <Button
+                x:Name="bnt93223"
+                Grid.Row="3"
+                Grid.RowSpan="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="20"
+                Text="DEL"
+                Command="{Binding DelCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"/>
+                <Button
+                x:Name="bnt932233"
+                Grid.Row="3"
+                Grid.RowSpan="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                BackgroundColor="Black"
+                FontSize="40"
+                FontAttributes="Bold"
+                Text="="
+                Command="{Binding ResCommand}"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="20"
+                TextColor="White"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
